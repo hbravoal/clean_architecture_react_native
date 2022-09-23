@@ -1,4 +1,4 @@
-# ARQUITECTURA LIMPIA CON SAGA
+# ARQUITECTURA LIMPIA REACT NATIVE CON SAGA
 
 [![License](https://img.shields.io/github/license/evrone/go-clean-template.svg)](https://github.com/evrone/go-clean-template/blob/master/LICENSE)
 [![Release](https://img.shields.io/badge/version-1.0.0-blue)](https://github.com/evrone/go-clean-template/releases/)
