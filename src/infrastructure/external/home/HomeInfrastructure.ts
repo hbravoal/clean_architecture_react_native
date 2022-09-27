@@ -1,14 +1,17 @@
 import RequestHome from 'domain/home/model/requestHome';
+import BaseAPI from 'infrastructure/BaseAPI';
 import ResponseHome from '../../../domain/home/model/responseHome';
 import {IHomeInfrastructure} from '../../../domain/interfaces/infrastructure/iHomeInfrastructure';
-import axios from 'axios';
 import Card from '../../../domain/home/model/card';
 
-export default class HomeInfrastructure implements IHomeInfrastructure {
+export default class HomeInfrastructure
+  extends BaseAPI
+  implements IHomeInfrastructure
+{
   public async getHomeServer(request: RequestHome): Promise<ResponseHome> {
     request.customer = '1';
 
-    const responseServer = await axios.get(
+    const responseServer = await this.get(
       'https://db.ygoprodeck.com/api/v7/cardinfo.php?fname=Magician',
     );
     const cards = responseServer.data;

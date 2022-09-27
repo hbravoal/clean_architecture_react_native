@@ -19,6 +19,9 @@ module.exports = {
         paths: ['src'],
         alias: {
           domain: './src/domain',
+          infrastructure: './src/infrastructure',
+          application: './src/application',
+          presentation: './src/presentation',
         },
       },
     },
