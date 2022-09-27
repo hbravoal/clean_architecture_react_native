@@ -1,1 +1,1 @@
-export const IHome = 'INCREMENT_ENTHUSIASM';
+export const IHomeInfrastructureType = 'IHomeInfrastructure';

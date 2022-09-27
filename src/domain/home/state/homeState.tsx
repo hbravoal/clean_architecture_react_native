@@ -1,8 +1,8 @@
-import ResponseHome from '../model/responseHome'
-
+import {TResponse} from '../model/tResponse';
+import Card from '../model/card';
 export const HomeState = {
-  data: new ResponseHome(),
-  loading: false
-}
+  data: new TResponse<Card[]>(),
+  loading: false,
+};
 
-export default HomeState
+export default HomeState;

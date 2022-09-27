@@ -1,6 +1,6 @@
-import RequestHome from '../../home/model/requestHome'
-import ResponseHome from '../../home/model/responseHome'
-
+import RequestHome from '../../home/model/requestHome';
+import {TResponse} from 'domain/home/model/tResponse';
+import Card from 'domain/home/model/card';
 export interface IHomeInfrastructure {
-  getHomeServer: (request: RequestHome) => Promise<ResponseHome>
+  getHomeServer: (request: RequestHome) => Promise<TResponse<Card[]>>;
 }
