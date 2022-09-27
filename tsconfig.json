@@ -2,7 +2,10 @@
 {
   "extends": "@tsconfig/react-native/tsconfig.json",     /* Recommended React Native TSConfig base */
   "compilerOptions": {
-
+    "baseUrl": ".", // This must be specified if "paths" is.
+    "paths": {
+      "domain/*": ["src/domain/*"] // This mapping is relative to "baseUrl"
+    },
     /* Basic Options */
     "target": "esnext", /* Specify ECMAScript target version: 'ES3' (default), 'ES5', 'ES2015', 'ES2016', 'ES2017','ES2018' or 'ESNEXT'. */
     "module": "commonjs", /* Specify module code generation: 'none', 'commonjs', 'amd', 'system', 'umd', 'es2015', or 'ESNext'. */    "experimentalDecorators": true,
